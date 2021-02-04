@@ -1,6 +1,12 @@
 import React from 'react';
+//Libraries
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled from 'styled-components';
+//Animations
+import { titleAnim, pageAnimation, slider, cardAnim } from '../animation';
+import { Frame4 } from './MyWork';
+import Title from "../components/Title"
 //Icons
 import {
   faGithub,
@@ -8,13 +14,6 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { faPhoneAlt, faAt } from '@fortawesome/free-solid-svg-icons';
-
-// import styled from 'styled-components';
-import { titleAnim, pageAnimation, slider, cardAnim, lineAnim } from '../animation';
-import { Frame4 } from './MyWork';
-import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
-
 const Contacts = () => {
   return (
     <StyledContacts
@@ -24,11 +23,7 @@ const Contacts = () => {
       exit='exit'
     >
       <Frame5 variants={slider} />
-      <motion.div className="title">
-        <motion.h1 variants={titleAnim}>Contacts</motion.h1>
-        <motion.div variants={lineAnim} className='line'></motion.div>
-      </motion.div>
-
+      <Title title="Contacts" />
       <Details variants={cardAnim}>
 
         <ContactItem variants={titleAnim}>
@@ -71,24 +66,6 @@ background: #222831;
 @media(max-height:768px){
   min-height:80vh;
 }
-.title{
-  width:50%;
-  margin:auto;
-  padding-top:1rem; 
-  h1{
-  text-align:center;
-  color:#eee
-}
-.line {
-    height: 0.5rem;
-    border-radius: 0.2rem;
-    background: #d65a31;
-    margin: auto;
-  }
-
-}
-
-  /* display: flex; */
  
   `;
 
@@ -115,16 +92,10 @@ const ContactItem = styled(motion.div)`
     margin-left: 1rem;
     color: #eeeeee;
     text-align:left;
-    /* a{
-    text-decoration: none;
-    color: #eeeeee;
-
-  } */
   }
 
   .icon {
     color: #eee;
-    /* color: #d65a31; */
     font-size: 2rem;
   }
 
@@ -137,16 +108,8 @@ const ContactItem = styled(motion.div)`
     &:hover {
       opacity: 1;
       color:#d65a31;  
-
+      }
     }
-
-
-  }
-    /* opacity:0.5;
-    &:hover {
-      opacity: 1;
-
-    } */
   }
 `;
 

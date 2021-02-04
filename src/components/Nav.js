@@ -1,10 +1,9 @@
 import React from 'react';
+//Libraries
 import styled from 'styled-components';
-import { Link /*useLocation*/ } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+//Images
 import logo1 from '../images/logo1.png';
-
-// import { motion } from 'framer-motion';
-// import { lineAnim } from '../animation';
 
 const Nav = () => {
   return (
@@ -42,7 +41,6 @@ const NavStyle = styled.nav`
   background: #393e46;
   box-shadow: 0px 1px 20px 0px #000000;
   z-index: 3;
-  /* width:100%;x */
   #logo {
     width: 5rem;
   }
@@ -74,7 +72,6 @@ const NavStyle = styled.nav`
     justify-content: space-around;
     height:20vh;
     text-align:center;
-    /* padding:0; */
     ul{
       flex-direction: column;
       justify-content: center;

@@ -1,6 +1,8 @@
 import React from 'react';
+//Libraries
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+//Animations
 import { cardAnim, lineAnim } from '../animation';
 
 const Project = ({ id, title, description, image, using, link }) => {
@@ -25,7 +27,6 @@ const Project = ({ id, title, description, image, using, link }) => {
 
 const StyledProject = styled(motion.div)`
   width: 50vw;
-  /* min-width: 40rem; */
   margin: 2rem auto;
   padding: 1rem;
   text-align: center;
@@ -84,7 +85,6 @@ const StyledProject = styled(motion.div)`
     display:block;
     margin-right:1rem;
     text-align:right;
-    /* float: right; */
     color: #d65a31;
     opacity: 0.5;
     text-decoration: none;

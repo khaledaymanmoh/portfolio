@@ -1,15 +1,16 @@
 import React from 'react';
+//Libraries
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+//Components
 import Wave from "./Wave"
+//Animations
 import { fade, titleAnim, lineAnim } from "../animation"
-// import personalshot from "../images/personalshot.jpg"
 
 const AboutSection = () => {
   return (
     <AboutSectionStyle>
       <Introduction variants={fade}>
-        {/* <motion.img id="img" src={personalshot} /> */}
         <motion.h1 variants={titleAnim}>Hello World!</motion.h1>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <motion.h2 variants={titleAnim}>This is</motion.h2>
@@ -62,11 +63,8 @@ width:50%;
 margin: auto;
 display: flex;
 flex-direction:column;
-/* margin-top:5rem; */
 padding:1rem;
 align-items:center;
-/* background:black; */
-/* background:rgba(57, 62, 70,0.6); */
 z-index:2;
 /* img{
   position: relative;
@@ -76,9 +74,4 @@ z-index:2;
 } */
 
 `
-
-// const Hide = styled.div`
-// overflow:hidden
-// `
-
 export default AboutSection;

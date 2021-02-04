@@ -1,13 +1,14 @@
+//Style Sheet
 import './App.css';
-// import { motion } from 'framer-motion';
+//Libraries
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from "framer-motion"
+//Components
 import About from './pages/About';
 import MyWork from './pages/MyWork';
 import Contacts from './pages/Contacts';
 import Nav from './components/Nav';
-import { Switch, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from "framer-motion"
-// https://colorhunt.co/palette/144399
-
+//Used color palette https://colorhunt.co/palette/144399
 function App() {
   const location = useLocation();
   return (

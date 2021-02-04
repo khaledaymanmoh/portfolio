@@ -1,6 +1,8 @@
 import React from "react";
+//Libraries
 import { motion } from 'framer-motion';
-import styled from "styled-components"
+import styled from "styled-components";
+
 const Wave = () => {
     return (
         <WaveStyle viewBox="0 0 710 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,16 +20,16 @@ const Wave = () => {
 
     );
 }
-//Styled Components
-const WaveStyle = styled.svg`
-position:absolute;
-z-index: 1;
-top:30%;
-left:0;
 
-@media (max-width:768px){
-    top:40%;
-}
+const WaveStyle = styled.svg`
+    position:absolute;
+    z-index: 1;
+    top:30%;
+    left:0;
+
+    @media (max-width:768px){
+        top:40%;
+    }
 
 `
 export default Wave;

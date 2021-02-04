@@ -19,15 +19,6 @@ export const pageAnimation = {
         }
     }
 };
-// export const titleAnim = {
-//     hidden: { y: 200 },
-//     show: {
-//         y: 0,
-//         transition: {
-//             duration: 1, ease: "easeOut"
-//         }
-//     }
-// }
 export const titleAnim = {
     hidden: { opacity: 0 },
     show: {
@@ -37,18 +28,6 @@ export const titleAnim = {
         }
     }
 };
-// export const lineAnim = {
-//     hidden: {
-//         width: "0%"
-//     },
-//     show: {
-//         width: "100%",
-//         transition: {
-//             duration: 1
-//         }
-//     }
-// };
-
 export const sliderContainer = {
     hidden: { opacity: 1 },
     show: {
@@ -58,7 +37,6 @@ export const sliderContainer = {
         }
     }
 }
-
 export const slider = {
     hidden: { x: '-130%', skew: '45deg' },
     show: {
@@ -70,7 +48,6 @@ export const slider = {
         }
     }
 }
-
 export const cardAnim = {
     hidden: { opacity: 0 },
     show: {
@@ -81,7 +58,6 @@ export const cardAnim = {
         }
     }
 }
-
 export const lineAnim = {
     hidden: {
         width: "0%"

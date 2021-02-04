@@ -1,8 +1,10 @@
 import React from 'react';
+//Libraries
 import { motion } from 'framer-motion';
-// import styled from 'styled-components';
-import AboutSection from '../components/AboutSection';
+//Animations
 import { pageAnimation } from '../animation';
+//Components
+import AboutSection from '../components/AboutSection';
 
 const About = () => {
   return (

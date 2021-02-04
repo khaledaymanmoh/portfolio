@@ -1,19 +1,19 @@
 import React from 'react';
+//Libraries
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import projects from '../projects';
-import Project from '../components/Project';
-
-// Importing animations
+//Animations
 import {
   pageAnimation,
   sliderContainer,
   slider,
   fade,
-  titleAnim,
-  lineAnim
 } from '../animation';
-
+//Components
+import Project from '../components/Project';
+import Title from '../components/Title';
+//Data
+import projects from '../projects';
 const MyWork = () => {
   console.log(projects);
   return (
@@ -30,10 +30,7 @@ const MyWork = () => {
         <Frame4 variants={slider} />
       </motion.div>
 
-      <motion.div className="title">
-        <motion.h1 variants={titleAnim}>My Work</motion.h1>
-        <motion.div variants={lineAnim} className='line'></motion.div>
-      </motion.div>
+      <Title title="My Work" />
       <motion.div variants={fade} className='projects'>
         {projects.map((project) => (
           <Project
@@ -54,22 +51,6 @@ const MyWork = () => {
 const WorkStyle = styled(motion.div)`
   background: #222831;
   min-height: 90vh;
-  .title{
-  width:50%;
-  margin:auto;
-  padding-top:1rem; 
-  h1{
-  text-align:center;
-  color:#eee
-}
-.line {
-    height: 0.5rem;
-    border-radius: 0.2rem;
-    background: #d65a31;
-    margin: auto;
-  }
-
-}
  
 `;
 
@@ -91,7 +72,5 @@ const Frame3 = styled(Frame1)`
 export const Frame4 = styled(Frame1)`
   background: #d9e4dd;
 `;
-
-
 
 export default MyWork;
