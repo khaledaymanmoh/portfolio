@@ -21,7 +21,7 @@ const Nav = () => {
           <div className='line'></div>
         </li>
         <li>
-          <Link to='/contacts'>Contact</Link>
+          <Link to='/contacts'>Contacts</Link>
           <div className='line'></div>
         </li>
       </ul>
