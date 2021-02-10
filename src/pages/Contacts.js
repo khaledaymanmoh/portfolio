@@ -34,7 +34,7 @@ const Contacts = () => {
         </ContactItem>
         <ContactItem variants={titleAnim}>
           <FontAwesomeIcon className='icon' icon={faPhoneAlt} />
-          <h3>+201110788836</h3>
+          <a href="tel:+201110788836"><h3>+201110788836</h3></a>
         </ContactItem>
         <ContactItem variants={titleAnim}>
           <FontAwesomeIcon className='icon' icon={faGithub} />
@@ -100,6 +100,9 @@ const ContactItem = styled(motion.div)`
   .icon {
     color: #eee;
     font-size: 2rem;
+  }
+  a{
+    text-decoration:none;
   }
 
   .link-to {
