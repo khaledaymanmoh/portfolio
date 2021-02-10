@@ -4,10 +4,13 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 //Animations
 import { cardAnim, lineAnim } from '../animation';
+//Components
+import { useScroll } from "./useScroll";
 
 const Project = ({ id, title, description, image, using, link }) => {
+  const [element, controls] = useScroll();
   return (
-    <StyledProject variants={cardAnim}>
+    <StyledProject variants={cardAnim} ref={element} animate={controls} initial="hidden">
       <h1>{title}</h1>
       <motion.div variants={lineAnim} className='line'></motion.div>
       <h2>Using:</h2>

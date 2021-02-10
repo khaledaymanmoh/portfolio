@@ -83,3 +83,25 @@ export const fade = {
         }
     }
 };
+
+export const swipeFade = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            ease: "easeOut",
+            duration: 0.2,
+        }
+    }
+};
+export const swipeAnim = {
+    hidden: { opacity: 1, y: -100 },
+    show: {
+        opacity: 0,
+        y: 100,
+        transition: {
+            duration: 1,
+            ease: "easeOut"
+        }
+    }
+}

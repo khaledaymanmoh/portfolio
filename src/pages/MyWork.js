@@ -12,10 +12,11 @@ import {
 //Components
 import Project from '../components/Project';
 import Title from '../components/Title';
+import ScrollTop from '../components/ScrollTop';
 //Data
 import projects from '../projects';
+
 const MyWork = () => {
-  console.log(projects);
   return (
     <WorkStyle
       variants={pageAnimation}
@@ -44,6 +45,7 @@ const MyWork = () => {
           />
         ))}
       </motion.div>
+      <ScrollTop />
     </WorkStyle>
   );
 };

@@ -14,6 +14,8 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { faPhoneAlt, faAt } from '@fortawesome/free-solid-svg-icons';
+//Components
+import ScrollTop from "../components/ScrollTop";
 const Contacts = () => {
   return (
     <StyledContacts
@@ -53,6 +55,7 @@ const Contacts = () => {
           </h3>
         </ContactItem>
       </Details>
+      <ScrollTop />
     </StyledContacts>
   );
 };
