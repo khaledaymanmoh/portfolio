@@ -71,12 +71,11 @@ export const Story = styled(Introduction)`
     }
     .parag {
       color: #eee;
-      font-size: 1.2rem;
+      font-size: 1rem;
       flex: 6;
       padding: 5rem;
       @media (max-width: 786px) {
         padding: 0;
-        font-size: 1rem;
       }
     }
   }
