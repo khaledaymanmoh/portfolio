@@ -57,7 +57,6 @@ export const Story = styled(Introduction)`
     }
     .image {
       flex: 4;
-      /* overflow: hidden; */
       img {
         @media (max-width: 786px) {
           width: 50%;
@@ -77,6 +76,7 @@ export const Story = styled(Introduction)`
       padding: 5rem;
       @media (max-width: 786px) {
         padding: 0;
+        font-size: 1rem;
       }
     }
   }

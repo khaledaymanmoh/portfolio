@@ -23,11 +23,10 @@ const MyStory = () => {
                     </div>
 
                     <p className='parag'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga
-                        consequuntur qui. Provident dolorem earum eius ab illo ratione eum
-                        ut. Odio, repellat tenetur temporibus obcaecati quod placeat. Nemo
-                        autem similique molestiae asperiores voluptate! Dolore accusantium
-                        qui similique voluptate nesciunt nulla magnam, corrupti vitae sed
+                        I discovered my passion for computer programming in my early days in university, in which I was studying civil engineering, and due to my love for civil engineering then, combined with some fear of the unknown (to be honset), I decided not to switch majors, and self learn programming instead.
+                        I started exploring different languages randomly and solving some problems using code during my years of studying, beside building a software for my Bachelor Thesis project using Matlab.
+                        After graduating, I decided to shift to software Engineering, aiming to be a self-taught fullstack developer.
+                        started the journey and here I am..
                     </p>
                 </motion.div>
             </Story>
