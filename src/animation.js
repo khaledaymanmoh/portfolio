@@ -95,10 +95,10 @@ export const swipeFade = {
     }
 };
 export const swipeAnim = {
-    hidden: { opacity: 1, y: -100 },
+    hidden: { opacity: 1, y: 100 },
     show: {
         opacity: 0,
-        y: 100,
+        y: -100,
         transition: {
             duration: 1,
             ease: "easeOut"
