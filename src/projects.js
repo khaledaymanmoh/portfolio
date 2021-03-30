@@ -2,6 +2,7 @@
 import reacttodo from "./images/reacttodo.JPG";
 import reactwavesplayer from "./images/reactwavesplayer.JPG";
 import reactgallery from "./images/reactgallery.JPG";
+import randomquote from "./images/randomquote.jpg";
 const projects = [
     {
         id: 1,
@@ -23,6 +24,14 @@ const projects = [
         description: "A first step towards back-end development, I chose firebase due its simplicity.. Created an online gallery that saves uploaded photos in a firestore storage and present them in a simple grid, added styles using Styled Components and simple animations using Framer Motion.",
         image: reactgallery,
         using: ["ReactJS", "Firebase"], link: "http://fire-reactgram.netlify.app"
+    }
+    ,
+    {
+        id: 4,
+        title: "Random Quote Machine",
+        description: "Using an external API, I built a random quote machine that generates a new quote every 15 seconds or on click. Also, user can share the current quote to Facebook or Twitter.",
+        image: randomquote,
+        using: ["ReactJS"], link: "http://randomquo.netlify.app"
     }
 
 ];
