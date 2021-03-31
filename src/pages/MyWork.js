@@ -34,15 +34,7 @@ const MyWork = () => {
       <Title title="My Work" />
       <motion.div variants={fade} className='projects'>
         {projects.map((project) => (
-          <Project
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            using={project.using}
-            link={project.link}
-          />
+          <Project key={project.id} project={project} />
         ))}
       </motion.div>
       <ScrollTop />
